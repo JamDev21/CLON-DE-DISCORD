@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+@font-face {
+    font-family: Resotho;
+    src: url("fonts/ResotE.ttf");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("fonts/Nunito-Regular.ttf");
+}
+
+body{
+    /* background: linear-gradient(#02012d 30%, #161a86, #393abe); */
+    background-color: #02012d;
+background-image: linear-gradient(170deg, #02012d 0%, #02012d 10%, #02012d 10%, #161a86 44%, #393abe 80%, #2255e9 100%);
+
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+    /* background-attachment: fixed; */
+}
+
+header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin: 0px 150px 0px 150px;
+    width: 80%;
+    align-items: center;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    justify-content:center;
+}
+
+.corona{
+    filter: blur(2px);
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+}
+
+.div_logo_discord{
+    width: 100px;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+
+.nav_menu_bar{
+    display: flex;
+    
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 11px 0px 11px;
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+a p{
+   
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.button_iniciarSesion{
+    background-color: white;  
+    border: none;
+    border-radius: 15px;
+    /* position: absolute;
+    left: 920px;
+    top: 17px; */
+    margin-left: 40px;
+    padding: 8px 10px;
+}
+
+button p{
+    color: white 0.1;
+    font-size: 11px;
+    
+}
+
+main{
+    display:block;
+    justify-content: center;
+}
+ 
+.section_1{
+    display:flex;
+    justify-content: center;
+}
+
+
+.div_1{
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: absolute; */
+    top: 40px;
+    /* margin: 0 auto; */
+    /* background-color: #02012d; */
+    /* justify-content:space-around; */
+
+}
+
+
+main div img{
+   height: 470px;
+   width: 680px;
+   position: absolute;
+   right: 100px;
+   top: 70px;
+}
+
+.div-content-text{
+    display: block;
+    position: absolute;
+    left: 250px;
+    top: 170px;
+    width: 30%;
+    /* background-color: aquamarine; */
+
+}
+
+div div p{
+   
+    font-family: Resotho;
+    /* font-weight: 900; */
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.div_content_text2{
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+div div div p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Nunito;
+    font-size: 18px; 
+}
+
+.content-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45px;
+    
+}
+
+.img-descarga{
+    width: 17px;
+    height:22px ;
+    margin-right: 10px;
+}
+
+.button_descarga{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 30px;
+}
+
+.button_descarga:hover{
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button_abrirEnNavegador{
+    background-color: #161cbb;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+.button_abrirEnNavegador:hover{
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.textbuttons{
+    font-size: 15px;
+    /* font-weight: 500; */
+    color: rgb(0, 0, 0);
+}
+
+.textbuttons:hover{
+    color: #161cbb;
+}
+.textbuttons2{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.section-main{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.contend_chatsDeGrupo{
+    display: flex;
+    background-image: linear-gradient(135deg, #fff3, #ffffff12);
+    box-shadow: 0 2px 52px #452a7c1a, inset 0 0 0 3px #fff3;
+    border-radius: 50px;
+    width: 95%;
+    /* max-width: 90%; */
+    height: 80vh;
+    z-index: -1;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+video{
+    overflow: hidden;
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+}
+
+.div_textGrupos{
+    position: relative;
+    /* right: 5px; */
+    top: -100px;
+    /* background-color: #02012d; */
+    width: 50%;
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+}
+
+.video_grupos{
+    width: 60%;
+    height: 90%;
+    border-radius: 50px;
+    position: relative;
+    left: 10px;
+    margin-right: 20px;
+    
+}
+
+.text_div_equipos{
+    font-family: Resotho;
+    /* font-weight: 900; */
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    top: 70px;
+    width: 300px;
+}
+
+#textosgrupo{
+    position: relative;
+    left: 25px;
+    display: block;
+    
+}
+.text2_grupos{
+    font-family: Nunito;
+    font-size: 15px; 
+}
+
+.img_wumpus{
+    z-index: -1;
+    width: 120px;
+    height: 80px;
+    position: relative;
+    top: 110px;
+    right: -910px;
+
+}
+
+/* *-*-*-*-* */
+.section-main2{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-main2_2{
+    position: relative;
+    top: 550px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-main3{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.section-main3_2{
+    position: relative;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+.div_textGrupos2{
+    position: relative;
+    /* right: 5px; */
+    top: -100px;
+    /* background-color: #02012d; */
+    width: 50%;
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+}
+
+.video_grupos2_1{
+    width: 60%;
+    height: 90%;
+    border-radius: 50px;
+    position: relative;
+    left: 55px;
+    margin-right: 20px;
+    
+}
+.video_grupos2{
+    width: 60%;
+    height: 90%;
+    border-radius: 50px;
+    position: relative;
+    left: 70px;
+    margin-right: 20px;
+    
+}
+
+.text_div_equipos2{
+    font-family: Resotho;
+    /* font-weight: 900; */
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    top: 70px;
+    width: 300px;
+}
+
+#textosgrupo2{
+    position: relative;
+    left: 25px;
+    display: block;
+    
+}
+.text2_grupos2{
+    font-family: Nunito;
+    font-size: 15px; 
+}
+
+.img_box{
+    width: 250px;
+    height: 270px;
+    position: relative;
+    top: 200px;
+    right: -980px;
+    z-index: 1000;
+}
+
+.main-line{
+    display: flex;
+    align-items: center;
+    background-image: url('img/664f259f33b6731b7df75db4_line-move.webp');
+    width: 100%;
+    height: 110px;
+    margin: 200px 0px 60px 0px;
+}
+
+.div-hablar{
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    position: relative;
+    left: 10%;
+    /* background-color: rgb(27, 79, 126); */
+}
+
+.div-jugar{
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    position: relative;
+    left: 20%;
+    /* background-color: rgb(27, 79, 126); */
+}
+
+.div-chatear{
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    position: relative;
+    left: 30%;
+    /* background-color: rgb(27, 79, 126); */
+}
+
+.tex_line{
+    font-family: Resotho;
+    /* font-weight: 900; */
+    font-size: 50px;
+    color: white;
+    justify-content: end;
+    
+}
+
+.img_discord_white{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    top: 0px;
+}
+
+.img_woman{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-top: 265px;
+    right: 400px;
+}
+
+
+.img_women{
+    
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    margin-top: 230px;
+    right: 270px;
+}
+
+
+
+
