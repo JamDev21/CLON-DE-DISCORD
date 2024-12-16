@@ -21,12 +21,11 @@
 body{
     /* background: linear-gradient(#02012d 30%, #161a86, #393abe); */
     background-color: #02012d;
-background-image: linear-gradient(170deg, #02012d 0%, #02012d 10%, #02012d 10%, #161a86 44%, #393abe 80%, #2255e9 100%);
-
+    background-image: linear-gradient(170deg, #02012d 0%, #02012d 10%, #02012d 10%, #161a86 44%, #393abe 80%, #2255e9 100%);
     background-repeat: no-repeat;
-    height: auto;
+    min-height: 100vh;
     margin: 0;
-    /* background-attachment: fixed; */
+    background-attachment:scroll;
 }
 
 header{
@@ -46,6 +45,64 @@ header{
     width: 150px;
     height: 150px;
 }
+.turnip{
+    filter: blur(4px);
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+}
+
+.trophy{
+    filter: blur(2px);
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 500px;
+}
+
+.star1{
+    filter: blur(2px);
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+.star2{
+    filter: blur(2px);
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 80px;
+    top: 200px;
+}
+
+.potion{
+    filter: blur(2px);
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+.star3{
+    filter: blur(2px);
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 450px;
+    top: 80px;
+}
+
+
 
 .div_logo_discord{
     width: 100px;
@@ -77,9 +134,7 @@ li a{
 
 li a:hover{
     text-decoration: underline;
-    color: white;
-    font-size: 20px;
-    margin: 0px 20px 0px 20px;
+
 }
 
 a p{
@@ -195,7 +250,7 @@ div div div p{
 }
 
 .button_descarga:hover{
-    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 12px 10px 20px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -208,7 +263,7 @@ div div div p{
 }
 
 .button_abrirEnNavegador:hover{
-    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0,0.5);
     
 }
 
@@ -485,6 +540,241 @@ video{
     margin-top: 230px;
     right: 270px;
 }
+
+
+.texto-despedida{
+    position: relative;
+    top: 750px;
+    font-family: Resotho;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.content-buttons2{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 750px;
+    justify-content: center;
+    margin-top: 45px;
+    
+}
+
+.button_descarga2{
+    display: flex;
+    background-color: #5865f2  ;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-right: 30px;
+}
+
+.button_descarga2:hover{
+    background-color: #9ca2e4 ; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+.textbuttons3{
+    font-family: Nunito;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-weight: 500; */
+    color: rgb(255, 255, 255);
+}
+
+.imagen-despedida{
+    position: relative;
+    top: 800px;
+    width: 100%;
+}
+
+.img-despedida-discord{
+    width: 100%;
+    height: 350px;
+}
+
+.img-wumpus-solo{
+    position: absolute;
+    top:110px ;
+    left: 39%;
+    width: 250;
+    height: 240px;
+}
+
+.img-hoja-wumpus{
+    position: absolute;
+    top: 60px;
+    left: 42%;
+    width: 100px;
+    height: 50px;
+    animation: balanceo 2s ease-in-out infinite; 
+}
+
+@keyframes balanceo {
+    0% {
+        transform: rotate(5deg); /* Inicia ligeramente inclinado a la derecha */
+    }
+    50% {
+        transform: rotate(-5deg); /* Se inclina a la izquierda */
+    }
+    100% {
+        transform: rotate(5deg); /* Regresa a la posición inicial */
+    }
+}
+
+footer{
+    display: flex;
+    background-color: #acb7fb;
+    background-image: linear-gradient(160deg, #acb7fb 0%, #b0b3f3 19%, #7887ca 39%, #314eaa 60%, #314eaa 80%, #314eaa 100%);
+    height: 550px;
+    position: relative;
+    top: 796px;
+    box-shadow: 0 2px 52px #452a7c1a, inset 0 0 0 3px #fff3;
+}
+
+.div_footer{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    width: 50%;
+    position: relative;
+    right: -680px;
+    background-color: #161cbb;
+}
+
+.footer-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    top:50px ;
+    height: 70%;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+}
+
+.language-selector img {
+    margin-right: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.links div {
+    flex: 1;
+    margin: 10px;
+    
+}
+
+.links h4 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.links a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+.footer-logo img {
+    width: 120px;
+    position: relative;
+    left: -510px;
+    
+}
+
+.footer-logo button {
+    background-color: #5865f2;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+    right: -240px;
+}
+
+.footer-logo button:hover {
+    background-color: #9ca2e4 ; 
+}
+
+span {
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-top{
+    position: relative;
+    top: 85px;
+    left: 300px;
+}
+
+.linea {
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 20px auto; 
+    width: 140%; 
+    position: relative;
+    left: -40%;
+}
+
+.desarrollador{
+    position: relative;
+    top: 800px;
+    /* left: 300px; */
+    font-family: Resotho;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
 
 
 
