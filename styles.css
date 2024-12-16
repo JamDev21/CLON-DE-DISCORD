@@ -160,6 +160,12 @@ button p{
     
 }
 
+button p:hover{
+    color: rgb(8, 70, 243) ;
+    font-size: 11px;
+    
+}
+
 main{
     display:block;
     justify-content: center;
